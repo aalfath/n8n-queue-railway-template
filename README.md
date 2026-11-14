@@ -1,6 +1,6 @@
 # n8n on Railway (queue mode)
 
-[![Deploy on Railway](https://railway.com/button.svg)](https://railway.com/new/template/hKvarO?utm_medium=integration&utm_source=button&utm_campaign=n8n)
+[![Deploy on Railway](https://railway.com/button.svg)](https://railway.com/new/template/VmoGD3?utm_medium=integration&utm_source=button&utm_campaign=n8n)
 
 A Railway template for [n8n](https://n8n.io), the workflow automation tool, running in queue mode:
 
@@ -49,4 +49,5 @@ This template builds from this repo's `main` branch. When a new n8n version is m
 - `n8n/Dockerfile`, `n8n-worker/Dockerfile`: the pinned upstream image plus fixed settings
 - `n8n/railway-start.sh`: hashes the owner password, hands the root-owned Railway volume to the `node` user, then starts n8n as `node` on `$PORT`
 - `n8n-worker/railway-start.sh`: starts the worker with its health server on `$PORT`
-- `*/railway.json`: Dockerfile builder, health check, restart policy
+
+There is no `railway.json`: Railway no longer reads it for new services. The health check (`/healthz/readiness` on both n8n services) and the restart policy (on failure, up to 10 retries) are part of the Railway template itself.
