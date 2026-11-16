@@ -1,5 +1,7 @@
 # n8n on Railway (queue mode)
 
+[![Deploy on Railway](https://railway.com/button.svg)](https://railway.com/new/template/n8n-11?utm_medium=integration&utm_source=button&utm_campaign=n8n)
+
 A Railway template for [n8n](https://n8n.io), the workflow automation tool, running in queue mode:
 
 | Service | Source | What it does |
