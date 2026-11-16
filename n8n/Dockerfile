@@ -1,6 +1,6 @@
 # n8n main process: editor, REST API, webhook intake and scheduling (queue mode).
 # Pinned by version and digest. Bump both together and add a CHANGELOG.md entry.
-FROM n8nio/n8n:2.47.5@sha256:e29e9cc965a16d07d989f115f729f8a1c7aff58688d4850247fa495d4d7aae2f
+FROM n8nio/n8n:2.47.7@sha256:b4b90747b81fcda7e76550c0d3aa7f0f64917a1e9573cff40d6834eaf2e0f8ea
 
 # Fixed settings live here, not in template variables: Railway's template
 # generator drops literal variable values. Template variables still override these.

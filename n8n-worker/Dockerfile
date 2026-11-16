@@ -1,6 +1,6 @@
 # n8n queue-mode worker: runs workflow executions taken from Redis.
 # Keep this pin identical to n8n/Dockerfile: main and worker must run the same version.
-FROM n8nio/n8n:2.47.5@sha256:e29e9cc965a16d07d989f115f729f8a1c7aff58688d4850247fa495d4d7aae2f
+FROM n8nio/n8n:2.47.7@sha256:b4b90747b81fcda7e76550c0d3aa7f0f64917a1e9573cff40d6834eaf2e0f8ea
 
 ENV DB_TYPE=postgresdb \
     DB_POSTGRESDB_PORT=5432 \
