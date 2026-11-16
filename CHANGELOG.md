@@ -2,6 +2,10 @@
 
 Breaking changes are listed first in each entry. n8n runs database migrations on start: back up Postgres before applying an update, and update `n8n` and `n8n-worker` together.
 
+## Unreleased (2026-11-16)
+
+- README: Deploy on Railway button for the published template `n8n-11`. No change to the n8n services.
+
 ## 2.47.7 (2026-11-16)
 
 - n8n 2.47.5 → 2.47.7 (`n8nio/n8n:2.47.7@sha256:b4b90747b81fcda7e76550c0d3aa7f0f64917a1e9573cff40d6834eaf2e0f8ea`), patch releases. Release notes: https://github.com/n8n-io/n8n/releases/tag/n8n%402.47.7 and https://github.com/n8n-io/n8n/releases/tag/n8n%402.47.6
